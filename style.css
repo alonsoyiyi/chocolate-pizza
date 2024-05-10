@@ -2,9 +2,7 @@
     --maxwidth:70vw;
     --colortext:#723e25;
 }
-body{
-    font-family: 'Oswald';
-}
+
 header{
     display: flex;
     justify-content:space-between;
@@ -27,6 +25,11 @@ header .logo img{
 }
 header ul{
     display: flex;
+    gap: 2px;
+}
+header li:nth-child(7){
+    margin-left: 20px;
+
 }
 header .brand #tittle{
     font-family: 'Yellowtail', cursive;
@@ -110,6 +113,7 @@ main .ingredients{
     justify-content: space-around;
     font-family: 'Patrick Hand SC';
     height: 300px;
+    margin-bottom: 40px;
 
 }
 main .ingredients label{
@@ -120,4 +124,75 @@ main .ingredients ul{
 }
 main .ingredients li{
     margin-block: 10px;
+}
+:checked + label{
+    text-decoration: line-through;
+    font-weight: 800;
+}
+main .author{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    color: var(--colortext);
+}
+main .author h2{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+main .author p{
+    font-size: 1.3rem;
+    
+}
+#info_author {
+    width: 600px;
+    margin-left: 25px;
+}
+.author a{
+    background-color:#bc7058;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 200px; 
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Oswald';
+    margin-left: 40px;
+    margin-top: 15px;
+}
+.author img{
+    width: 90px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    opacity: 0.4;
+    max-width: var(--maxwidth);
+    margin-inline: auto;
+    
+}
+footer .hr{
+    position: relative;
+}
+footer .hr hr{
+    border-bottom: none;
+    width: 100%;
+}
+footer .hr img{
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    border: 5px solid white;
+    width: 40px;
+}
+footer .p{
+    font-size: 1.1rem;
+    margin-top: 50px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 100px;
 }
